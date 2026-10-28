@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/background_gradient">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⏰ Заботы и дела"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="24dp"/>
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/mysh"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- блок для прокрутки списка напоминаний -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvRemindersList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Список дел пуст. Добавьте первую задачу по уходу за питомцем."
+            android:textSize="16sp"
+            android:textColor="#1E293B"
+            android:lineSpacingExtra="8dp"/>
+    </ScrollView>
+
+    <!-- кнопка добавления новой задачи -->
+    <Button
+        android:id="@+id/btnAddReminder"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Добавить задачу"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1E293B"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+</LinearLayout>

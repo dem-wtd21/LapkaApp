@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@drawable/background_gradient">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Новый питомец"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- блок выбора фотографии -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/ivSelectPhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:background="#E3EBF5"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выбрать фото питомца"
+            android:textSize="14sp"
+            android:textColor="#757575"/>
+    </LinearLayout>
+
+    <!-- поля ввода данных -->
+    <EditText
+        android:id="@+id/etPetNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Кличка питомца"
+        android:inputType="textCapWords"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etPetBreedInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Порода (например, Британская)"
+        android:inputType="textCapWords"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etPetAgeInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Возраст (например, 3 года)"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- кнопка сохранения -->
+    <Button
+        android:id="@+id/btnSavePet"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Сохранить питомца"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1E293B"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+</LinearLayout>
